@@ -10,7 +10,6 @@
 content="Vaishnavi Notes - MHT-CET PCB handwritten notes for students.">
 
 <style>
-
 *{
     margin:0;
     padding:0;
@@ -20,73 +19,72 @@ content="Vaishnavi Notes - MHT-CET PCB handwritten notes for students.">
 
 body{
     font-family:Arial, sans-serif;
-    background:#f7f7ff;
-    color:#182033;
+    background:#f5f5ff;
+    color:#172033;
     line-height:1.6;
 }
 
 /* HEADER */
-
 header{
+    background:white;
     position:sticky;
     top:0;
     z-index:1000;
-    background:white;
-    box-shadow:0 3px 15px rgba(0,0,0,0.08);
+    box-shadow:0 2px 15px rgba(0,0,0,0.08);
 }
 
 .navbar{
     max-width:1100px;
     margin:auto;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
     padding:15px 20px;
-}
-
-.logo-area{
     display:flex;
+    justify-content:space-between;
     align-items:center;
-    gap:12px;
 }
 
 .logo{
-    width:55px;
-    height:55px;
-    border-radius:14px;
-    object-fit:cover;
-}
-
-.logo-text{
-    font-size:22px;
-    font-weight:800;
-    color:#222;
-}
-
-nav{
     display:flex;
-    gap:25px;
+    align-items:center;
+    gap:12px;
+    font-size:22px;
+    font-weight:bold;
+    color:#5338d8;
+}
+
+/* CLEAR LOGO */
+.logo-icon{
+    width:48px;
+    height:48px;
+    background:linear-gradient(135deg,#684ee8,#4a32c7);
+    border-radius:14px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-size:27px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(83,56,216,0.25);
 }
 
 nav a{
     text-decoration:none;
-    color:#202534;
+    color:#202638;
+    margin-left:22px;
     font-weight:600;
 }
 
 nav a:hover{
-    color:#5b4bd8;
+    color:#5b43d6;
 }
 
 /* HERO */
-
 .hero{
-    min-height:650px;
+    min-height:620px;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:60px 20px;
+    padding:70px 20px;
     background:linear-gradient(135deg,#f1efff,#ffffff);
 }
 
@@ -94,13 +92,19 @@ nav a:hover{
     max-width:800px;
 }
 
-.hero-logo{
-    width:170px;
-    height:170px;
-    object-fit:cover;
-    border-radius:35px;
-    margin-bottom:25px;
-    box-shadow:0 15px 40px rgba(82,68,200,0.2);
+.big-logo{
+    width:125px;
+    height:125px;
+    margin:0 auto 30px;
+    background:linear-gradient(135deg,#684ee8,#4930c7);
+    border-radius:32px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    font-size:70px;
+    font-weight:bold;
+    box-shadow:0 15px 35px rgba(83,56,216,0.25);
 }
 
 .hero h1{
@@ -109,218 +113,167 @@ nav a:hover{
 }
 
 .hero h1 span{
-    color:#5948d5;
+    color:#5940d4;
 }
 
 .hero p{
     font-size:20px;
-    color:#626979;
-    margin:20px auto;
+    color:#667085;
     max-width:650px;
-}
-
-.buttons{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
-    margin-top:30px;
+    margin:15px auto 30px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 25px;
-    border-radius:30px;
     text-decoration:none;
+    padding:14px 28px;
+    border-radius:30px;
     font-weight:bold;
-    transition:0.3s;
+    margin:7px;
+    transition:0.2s;
 }
 
 .primary{
-    background:#5b49d6;
+    background:#5940d4;
     color:white;
-}
-
-.primary:hover{
-    background:#4434b8;
-    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(89,64,212,0.25);
 }
 
 .secondary{
     background:white;
-    color:#4d3cc7;
-    border:2px solid #5b49d6;
+    color:#5940d4;
+    border:2px solid #5940d4;
 }
 
-.secondary:hover{
-    background:#eeeaff;
+.btn:hover{
+    transform:translateY(-2px);
 }
 
-/* SECTION */
-
+/* SECTIONS */
 section{
-    padding:75px 20px;
-}
-
-.container{
-    max-width:1050px;
+    max-width:1100px;
     margin:auto;
+    padding:75px 20px;
 }
 
 .section-title{
     text-align:center;
-    font-size:36px;
-    margin-bottom:45px;
+    font-size:34px;
+    margin-bottom:12px;
+    color:#1d2538;
 }
 
-.section-title span{
-    color:#5b49d6;
+.section-subtitle{
+    text-align:center;
+    color:#70798b;
+    margin-bottom:40px;
 }
 
 /* NOTES */
-
 .notes-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    grid-template-columns:repeat(3,1fr);
+    gap:22px;
 }
 
-.note-card{
+.card{
     background:white;
-    padding:30px;
+    padding:28px;
     border-radius:20px;
+    box-shadow:0 8px 25px rgba(30,30,60,0.08);
     text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,0.08);
-    transition:0.3s;
 }
 
-.note-card:hover{
-    transform:translateY(-6px);
+.card-icon{
+    font-size:42px;
+    margin-bottom:12px;
 }
 
-.note-icon{
-    font-size:45px;
-    margin-bottom:15px;
-}
-
-.note-card h3{
-    font-size:23px;
+.card h3{
     margin-bottom:10px;
 }
 
-.note-card p{
-    color:#687080;
+.card p{
+    color:#687184;
     margin-bottom:20px;
 }
 
-.price{
-    font-size:25px;
-    font-weight:bold;
-    color:#5b49d6;
-    margin-bottom:15px;
-}
-
-.buy-btn{
+.view-btn{
     display:inline-block;
-    background:#5b49d6;
-    color:white;
     text-decoration:none;
-    padding:12px 22px;
+    background:#5940d4;
+    color:white;
+    padding:11px 22px;
     border-radius:25px;
     font-weight:bold;
 }
 
 /* ABOUT */
-
 .about{
     background:white;
-}
-
-.about-box{
-    max-width:800px;
-    margin:auto;
+    border-radius:25px;
+    box-shadow:0 8px 25px rgba(30,30,60,0.06);
     text-align:center;
 }
 
-.about-box p{
-    color:#626979;
-    font-size:18px;
-    margin-bottom:20px;
+.about p{
+    max-width:750px;
+    margin:15px auto;
+    color:#687184;
+    font-size:17px;
 }
 
 /* CONTACT */
-
 .contact-box{
-    max-width:700px;
-    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.contact-card{
     background:white;
-    padding:40px;
-    border-radius:25px;
+    padding:28px 15px;
     text-align:center;
-    box-shadow:0 8px 30px rgba(0,0,0,0.08);
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(30,30,60,0.08);
 }
 
-.contact-links{
-    display:flex;
-    flex-direction:column;
-    gap:15px;
-    margin-top:25px;
+.contact-card .icon{
+    font-size:38px;
+    margin-bottom:10px;
 }
 
-.contact-links a{
-    display:block;
-    padding:15px;
-    border-radius:12px;
-    background:#f1efff;
-    color:#4738bb;
+.contact-card a{
+    color:#5940d4;
     text-decoration:none;
     font-weight:bold;
-}
-
-.contact-links a:hover{
-    background:#e4e0ff;
+    word-break:break-word;
 }
 
 /* FOOTER */
-
 footer{
-    background:#171827;
+    background:#17152b;
     color:white;
     text-align:center;
     padding:30px 20px;
 }
 
 footer p{
-    color:#c8c9d3;
-    margin-top:8px;
+    opacity:0.8;
+    margin:5px;
 }
 
 /* MOBILE */
-
-@media(max-width:700px){
+@media(max-width:750px){
 
     .navbar{
         flex-direction:column;
         gap:12px;
     }
 
-    nav{
-        gap:15px;
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
     nav a{
+        margin:0 7px;
         font-size:14px;
-    }
-
-    .hero{
-        min-height:600px;
-    }
-
-    .hero-logo{
-        width:135px;
-        height:135px;
     }
 
     .hero h1{
@@ -331,30 +284,231 @@ footer p{
         font-size:17px;
     }
 
-    .section-title{
-        font-size:30px;
+    .notes-grid{
+        grid-template-columns:1fr;
     }
 
-}
+    .contact-box{
+        grid-template-columns:1fr;
+    }
 
+    .big-logo{
+        width:105px;
+        height:105px;
+        font-size:58px;
+    }
+}
 </style>
 </head>
 
 <body>
 
-
 <!-- HEADER -->
-
 <header>
+    <div class="navbar">
 
-<div class="navbar">
+        <div class="logo">
+            <div class="logo-icon">₹</div>
+            <div>Vaishnavi<br>Notes</div>
+        </div>
 
-<div class="logo-area">
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#notes">Notes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
 
-<!-- LOGO -->
-<img src="logo.png"
-     alt="Vaishnavi Notes Logo"
-     class="logo">
+    </div>
+</header>
 
-<div class="
-   
+
+<!-- HOME -->
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="big-logo">₹</div>
+
+        <h1>
+            Welcome to<br>
+            <span>Vaishnavi Notes</span>
+        </h1>
+
+        <p>
+            MHT-CET PCB students ke liye useful,
+            easy-to-understand aur exam-focused
+            handwritten notes.
+        </p>
+
+        <a href="#notes" class="btn primary">
+            📚 View Notes
+        </a>
+
+        <a href="#contact" class="btn secondary">
+            📞 Contact Me
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- NOTES -->
+<section id="notes">
+
+    <h2 class="section-title">📚 My Notes</h2>
+
+    <p class="section-subtitle">
+        MHT-CET PCB preparation ke liye notes
+    </p>
+
+    <div class="notes-grid">
+
+        <div class="card">
+            <div class="card-icon">🧪</div>
+            <h3>Chemistry Notes</h3>
+            <p>
+                Handwritten Chemistry notes
+                for MHT-CET PCB preparation.
+            </p>
+
+            <a href="#contact" class="view-btn">
+                View Notes
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3>Physics Notes</h3>
+            <p>
+                Easy-to-understand handwritten
+                Physics notes.
+            </p>
+
+            <a href="#contact" class="view-btn">
+                View Notes
+            </a>
+        </div>
+
+
+        <div class="card">
+            <div class="card-icon">🧬</div>
+            <h3>Biology Notes</h3>
+            <p>
+                Important Biology notes for
+                MHT-CET PCB students.
+            </p>
+
+            <a href="#contact" class="view-btn">
+                View Notes
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section id="about">
+
+    <div class="about">
+
+        <h2 class="section-title">
+            ✨ About Vaishnavi Notes
+        </h2>
+
+        <p>
+            Vaishnavi Notes ka aim hai students ko
+            simple aur useful study material provide karna.
+        </p>
+
+        <p>
+            Notes specially MHT-CET PCB preparation
+            ko dhyan me rakhkar banaye gaye hain.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact">
+
+    <h2 class="section-title">📞 Contact Me</h2>
+
+    <p class="section-subtitle">
+        Notes ke liye mujhse contact karein
+    </p>
+
+
+    <div class="contact-box">
+
+        <!-- PHONE -->
+        <div class="contact-card">
+
+            <div class="icon">📱</div>
+
+            <h3>Phone</h3>
+
+            <a href="tel:+919561261968">
+                9561261968
+            </a>
+
+        </div>
+
+
+        <!-- EMAIL -->
+        <div class="contact-card">
+
+            <div class="icon">📧</div>
+
+            <h3>Email</h3>
+
+            <a href="mailto:vaishnavisalunke031@gmail.com">
+                vaishnavisalunke031@gmail.com
+            </a>
+
+        </div>
+
+
+        <!-- INSTAGRAM -->
+        <div class="contact-card">
+
+            <div class="icon">📸</div>
+
+            <h3>Instagram</h3>
+
+            <a
+              href="https://instagram.com/Mht_cet_notes_by_vaishnavi"
+              target="_blank">
+              @Mht_cet_notes_by_vaishnavi
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+    <h3>Vaishnavi Notes</h3>
+
+    <p>
+        MHT-CET PCB Handwritten Notes
+    </p>
+
+    <p>
+        © 2026 Vaishnavi Notes
+    </p>
+
+</footer>
+
+</body>
+</html>
