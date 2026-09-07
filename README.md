@@ -1,4 +1,3 @@
-# mht-cet-notes-by-vaishnavi-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,8 +6,7 @@
 
 <title>Vaishnavi Notes | MHT-CET PCB Notes</title>
 
-<meta name="description"
-content="Vaishnavi Notes - MHT-CET PCB Chemistry, Physics and Biology revision notes.">
+<meta name="description" content="Vaishnavi Notes - MHT-CET PCB handwritten notes for students.">
 
 <style>
 *{
@@ -20,524 +18,264 @@ content="Vaishnavi Notes - MHT-CET PCB Chemistry, Physics and Biology revision n
 
 body{
     font-family:Arial, sans-serif;
-    background:#fffaf7;
-    color:#242424;
+    background:#f7f8fc;
+    color:#172033;
     line-height:1.6;
 }
 
 header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(255,250,247,0.96);
-    border-bottom:1px solid #eadfd8;
-    backdrop-filter:blur(10px);
-}
-
-.navbar{
-    max-width:1150px;
-    margin:auto;
-    padding:15px 20px;
+    background:#ffffff;
+    padding:15px 7%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
 }
 
-.logo-text{
-    font-size:25px;
-    font-weight:800;
-    color:#b45d75;
-}
-
-.logo-text span{
-    color:#c28a2d;
-}
-
-nav{
+.logo{
     display:flex;
-    gap:22px;
+    align-items:center;
+    gap:10px;
+    font-weight:800;
+    font-size:20px;
+    color:#172033;
+}
+
+.logo svg{
+    width:48px;
+    height:48px;
 }
 
 nav a{
     text-decoration:none;
-    color:#333;
+    color:#172033;
+    margin-left:18px;
     font-weight:600;
 }
 
 nav a:hover{
-    color:#b45d75;
+    color:#5b4bdb;
 }
-
-.menu{
-    display:none;
-    font-size:27px;
-    cursor:pointer;
-}
-
-/* HERO */
 
 .hero{
-    min-height:88vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    padding:60px 20px;
-    background:
-    radial-gradient(circle at top left,#ffe4ec,transparent 35%),
-    radial-gradient(circle at bottom right,#fff0cc,transparent 35%);
+    padding:65px 7%;
+    background:linear-gradient(135deg,#eef0ff,#ffffff);
+    text-align:center;
 }
 
-.hero-container{
-    max-width:1150px;
-    width:100%;
-    display:grid;
-    grid-template-columns:1.1fr .9fr;
-    gap:50px;
-    align-items:center;
-}
-
-.badge{
-    display:inline-block;
-    background:#f9e0e8;
-    color:#9e4c67;
-    padding:8px 15px;
-    border-radius:30px;
-    font-size:14px;
-    font-weight:bold;
-    margin-bottom:18px;
+.hero .big-logo{
+    width:110px;
+    height:110px;
+    margin:auto;
+    margin-bottom:15px;
 }
 
 .hero h1{
-    font-size:55px;
-    line-height:1.1;
-    margin-bottom:20px;
+    font-size:42px;
+    margin-bottom:10px;
 }
 
 .hero h1 span{
-    color:#b45d75;
+    color:#5b4bdb;
 }
 
 .hero p{
+    max-width:650px;
+    margin:10px auto;
+    color:#596174;
     font-size:18px;
-    color:#666;
-    max-width:580px;
-    margin-bottom:28px;
 }
 
-.buttons{
+.badges{
     display:flex;
-    gap:14px;
+    justify-content:center;
     flex-wrap:wrap;
+    gap:10px;
+    margin:25px 0;
+}
+
+.badge{
+    background:white;
+    padding:8px 15px;
+    border-radius:30px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    font-weight:600;
 }
 
 .btn{
     display:inline-block;
-    padding:13px 23px;
-    border-radius:30px;
+    background:#5b4bdb;
+    color:white;
     text-decoration:none;
+    padding:13px 25px;
+    border-radius:10px;
     font-weight:bold;
-    transition:.3s;
+    margin:8px;
 }
 
-.primary{
-    background:#b45d75;
-    color:white;
+.btn:hover{
+    background:#4434bd;
 }
 
-.primary:hover{
-    background:#923f59;
-    transform:translateY(-2px);
+.btn.secondary{
+    background:white;
+    color:#5b4bdb;
+    border:2px solid #5b4bdb;
 }
-
-.secondary{
-    border:2px solid #b45d75;
-    color:#b45d75;
-}
-
-.secondary:hover{
-    background:#b45d75;
-    color:white;
-}
-
-.hero-logo{
-    display:flex;
-    justify-content:center;
-}
-
-.hero-logo img{
-    width:360px;
-    height:360px;
-    object-fit:cover;
-    border-radius:50%;
-    box-shadow:0 20px 50px rgba(120,70,70,.18);
-}
-
-/* COMMON */
 
 section{
-    padding:80px 20px;
-}
-
-.container{
-    max-width:1100px;
-    margin:auto;
+    padding:55px 7%;
 }
 
 .section-title{
     text-align:center;
-    margin-bottom:45px;
+    font-size:30px;
+    margin-bottom:30px;
 }
 
-.section-title h2{
-    font-size:38px;
-    margin-bottom:8px;
-}
-
-.section-title p{
-    color:#777;
-}
-
-/* STATS */
-
-.stats{
-    background:#fff;
-}
-
-.stats-grid{
-    max-width:950px;
-    margin:auto;
+.cards{
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:20px;
 }
 
-.stat{
-    text-align:center;
-    padding:25px 15px;
-    background:#fff8f4;
-    border-radius:18px;
-    border:1px solid #f0e1da;
-}
-
-.stat h3{
-    font-size:28px;
-    color:#b45d75;
-}
-
-.stat p{
-    color:#666;
-}
-
-/* SUBJECTS */
-
-.subject-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.subject{
-    padding:30px;
-    border-radius:22px;
+.card{
     background:white;
-    border:1px solid #eee0da;
-    text-align:center;
-    transition:.3s;
-}
-
-.subject:hover{
-    transform:translateY(-7px);
-    box-shadow:0 15px 35px rgba(0,0,0,.08);
-}
-
-.subject-icon{
-    width:70px;
-    height:70px;
-    border-radius:50%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    margin:0 auto 18px;
-    font-size:32px;
-    background:#f7e2e8;
-}
-
-.subject:nth-child(2) .subject-icon{
-    background:#e2eff8;
-}
-
-.subject:nth-child(3) .subject-icon{
-    background:#e4f1e1;
-}
-
-.subject h3{
-    font-size:23px;
-    margin-bottom:8px;
-}
-
-.subject p{
-    color:#777;
-}
-
-/* NOTES */
-
-.notes{
-    background:#fff;
-}
-
-.notes-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:25px;
-}
-
-.note-card{
-    background:#fffaf7;
-    border:1px solid #eadfd8;
-    border-radius:20px;
     padding:25px;
-    position:relative;
-    overflow:hidden;
+    border-radius:16px;
+    box-shadow:0 5px 20px rgba(0,0,0,.07);
+    text-align:center;
 }
 
-.note-card .tag{
-    display:inline-block;
-    padding:5px 10px;
-    background:#f5dce5;
-    color:#984d67;
-    border-radius:20px;
-    font-size:12px;
-    font-weight:bold;
-    margin-bottom:15px;
-}
-
-.note-card h3{
-    font-size:22px;
+.card .icon{
+    font-size:40px;
     margin-bottom:10px;
 }
 
-.note-card ul{
-    padding-left:20px;
-    color:#666;
-    margin-bottom:20px;
+.card h3{
+    margin-bottom:8px;
+}
+
+.about{
+    background:white;
+}
+
+.score-box{
+    max-width:700px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+}
+
+.score{
+    background:#f5f3ff;
+    padding:22px 10px;
+    text-align:center;
+    border-radius:15px;
+}
+
+.score strong{
+    display:block;
+    font-size:28px;
+    color:#5b4bdb;
+}
+
+.notes-card{
+    max-width:750px;
+    margin:auto;
+}
+
+.notes-card ul{
+    list-style:none;
+    text-align:left;
+    margin:20px 0;
+}
+
+.notes-card li{
+    background:#f7f8fc;
+    padding:12px;
+    margin:8px 0;
+    border-radius:8px;
 }
 
 .price{
-    font-size:25px;
+    font-size:32px;
+    color:#5b4bdb;
     font-weight:bold;
-    color:#b45d75;
-    margin-bottom:15px;
+    margin:15px;
 }
 
-/* WHY */
-
-.why{
-    background:#fff4f6;
-}
-
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-}
-
-.why-card{
-    background:white;
-    padding:25px 18px;
-    border-radius:18px;
-    text-align:center;
-}
-
-.why-card .icon{
-    font-size:30px;
-    margin-bottom:10px;
-}
-
-.why-card h3{
-    margin-bottom:6px;
-}
-
-/* ABOUT */
-
-.about-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:50px;
-    align-items:center;
-}
-
-.about-box{
-    background:#fff5f7;
-    padding:35px;
-    border-radius:25px;
-    border:1px solid #f0dce2;
-}
-
-.about-box h3{
-    font-size:27px;
-    margin-bottom:15px;
-}
-
-.about-box p{
-    color:#666;
-    margin-bottom:12px;
-}
-
-.check{
-    margin:10px 0;
-    font-weight:600;
-}
-
-/* CTA */
-
-.cta{
-    background:linear-gradient(135deg,#b45d75,#d28ba0);
+.contact{
+    background:linear-gradient(135deg,#5b4bdb,#7768e8);
     color:white;
     text-align:center;
 }
 
-.cta h2{
-    font-size:40px;
-    margin-bottom:12px;
+.contact p{
+    margin:10px auto;
+    max-width:600px;
 }
 
-.cta p{
-    margin-bottom:25px;
-}
-
-.white-btn{
+.contact .btn{
     background:white;
-    color:#a34d68;
+    color:#5b4bdb;
 }
-
-/* FOOTER */
 
 footer{
-    background:#201c1d;
-    color:white;
-    padding:40px 20px;
-}
-
-.footer-container{
-    max-width:1100px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    gap:30px;
-    flex-wrap:wrap;
-}
-
-footer h3{
-    margin-bottom:10px;
-}
-
-footer p{
-    color:#c8c8c8;
-}
-
-.social a{
-    color:white;
-    text-decoration:none;
-    margin-right:15px;
-}
-
-.copyright{
+    background:#151927;
+    color:#cbd0dc;
     text-align:center;
-    color:#aaa;
-    margin-top:30px;
-    padding-top:20px;
-    border-top:1px solid #444;
+    padding:25px 10px;
 }
 
-/* MOBILE */
+footer strong{
+    color:white;
+}
 
-@media(max-width:800px){
+.small{
+    font-size:14px;
+    opacity:.8;
+    margin-top:8px;
+}
 
-    nav{
-        display:none;
-        position:absolute;
-        top:65px;
-        left:0;
-        right:0;
-        background:#fffaf7;
-        flex-direction:column;
-        padding:20px;
-        border-bottom:1px solid #eee;
+@media(max-width:700px){
+
+    header{
+        padding:12px 4%;
     }
 
-    nav.active{
-        display:flex;
+    .logo{
+        font-size:17px;
     }
 
-    .menu{
-        display:block;
+    .logo svg{
+        width:40px;
+        height:40px;
     }
 
-    .hero-container{
-        grid-template-columns:1fr;
-        text-align:center;
+    nav a{
+        margin-left:8px;
+        font-size:13px;
+    }
+
+    .hero{
+        padding:45px 5%;
     }
 
     .hero h1{
-        font-size:40px;
+        font-size:32px;
     }
 
-    .hero p{
-        margin-left:auto;
-        margin-right:auto;
+    section{
+        padding:45px 5%;
     }
 
-    .buttons{
-        justify-content:center;
-    }
-
-    .hero-logo{
-        order:-1;
-    }
-
-    .hero-logo img{
-        width:250px;
-        height:250px;
-    }
-
-    .stats-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .subject-grid,
-    .notes-grid{
+    .score-box{
         grid-template-columns:1fr;
-    }
-
-    .why-grid{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .about-grid{
-        grid-template-columns:1fr;
-    }
-
-    .section-title h2{
-        font-size:30px;
-    }
-
-    .cta h2{
-        font-size:30px;
-    }
-}
-
-@media(max-width:450px){
-
-    .stats-grid{
-        grid-template-columns:1fr 1fr;
-    }
-
-    .why-grid{
-        grid-template-columns:1fr;
-    }
-
-    .hero h1{
-        font-size:34px;
     }
 }
 </style>
@@ -546,23 +284,35 @@ footer p{
 <body>
 
 <header>
-    <div class="navbar">
 
-        <div class="logo-text">
-            Vaishnavi<span>Notes</span>
-        </div>
+<div class="logo">
 
-        <div class="menu" onclick="toggleMenu()">☰</div>
+<!-- CLEAR SVG LOGO -->
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+    <rect x="5" y="5" width="90" height="90" rx="22" fill="#5b4bdb"/>
+    <path d="M25 25h35c8 0 15 7 15 15v35H40c-8 0-15-7-15-15V25z"
+          fill="white"/>
+    <path d="M40 25v35c0 8 7 15 15 15h20"
+          fill="none"
+          stroke="#5b4bdb"
+          stroke-width="5"/>
+    <line x1="35" y1="40" x2="60" y2="40"
+          stroke="#5b4bdb" stroke-width="4"/>
+    <line x1="35" y1="50" x2="60" y2="50"
+          stroke="#5b4bdb" stroke-width="4"/>
+</svg>
 
-        <nav id="nav">
-            <a href="#home">Home</a>
-            <a href="#subjects">Subjects</a>
-            <a href="#notes">Notes</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
+<span>Vaishnavi Notes</span>
 
-    </div>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#notes">Notes</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
 </header>
 
 
@@ -570,460 +320,186 @@ footer p{
 
 <section class="hero" id="home">
 
-    <div class="hero-container">
+<svg class="big-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
 
-        <div>
+<rect x="5" y="5" width="90" height="90" rx="22" fill="#5b4bdb"/>
 
-            <div class="badge">
-                📚 MHT-CET PCB Study Notes
-            </div>
+<path d="M25 25h35c8 0 15 7 15 15v35H40c-8 0-15-7-15-15V25z"
+      fill="white"/>
 
-            <h1>
-                Study Smart with
-                <span>Vaishnavi Notes</span>
-            </h1>
+<path d="M40 25v35c0 8 7 15 15 15h20"
+      fill="none"
+      stroke="#5b4bdb"
+      stroke-width="5"/>
 
-            <p>
-                Easy-to-understand MHT-CET PCB notes made for
-                quick revision, concepts and exam preparation.
-            </p>
+<line x1="35" y1="40" x2="60" y2="40"
+      stroke="#5b4bdb" stroke-width="4"/>
 
-            <div class="buttons">
-                <a href="#notes" class="btn primary">
-                    📖 Explore Notes
-                </a>
+<line x1="35" y1="50" x2="60" y2="50"
+      stroke="#5b4bdb" stroke-width="4"/>
 
-                <a href="YOUR_INSTAGRAM_LINK"
-                   target="_blank"
-                   class="btn secondary">
-                    📸 Instagram
-                </a>
-            </div>
+</svg>
 
-        </div>
+<h1>Welcome to <span>Vaishnavi Notes</span></h1>
 
+<p>
+MHT-CET PCB students ke liye useful,
+easy-to-understand aur exam-focused notes.
+</p>
 
-        <div class="hero-logo">
+<div class="badges">
+<div class="badge">📚 Handwritten Notes</div>
+<div class="badge">🎯 MHT-CET PCB</div>
+<div class="badge">📝 Exam Focused</div>
+</div>
 
-            <!-- Rename your generated logo image to logo.png -->
-            <img src="logo.png"
-                 alt="Vaishnavi Notes Logo">
-
-        </div>
-
-    </div>
+<a href="#notes" class="btn">View Notes</a>
+<a href="#contact" class="btn secondary">Contact Me</a>
 
 </section>
 
 
-<!-- STATS -->
+<!-- WHY NOTES -->
 
-<section class="stats">
+<section>
 
-    <div class="stats-grid">
+<h2 class="section-title">Why Vaishnavi Notes?</h2>
 
-        <div class="stat">
-            <h3>84.08</h3>
-            <p>MHT-CET PCB Percentile</p>
-        </div>
+<div class="cards">
 
-        <div class="stat">
-            <h3>93.69</h3>
-            <p>Chemistry Percentile</p>
-        </div>
+<div class="card">
+<div class="icon">📖</div>
+<h3>Easy to Understand</h3>
+<p>Simple language aur clear explanation ke saath notes.</p>
+</div>
 
-        <div class="stat">
-            <h3>86.54</h3>
-            <p>Physics Percentile</p>
-        </div>
+<div class="card">
+<div class="icon">🎯</div>
+<h3>Exam Focused</h3>
+<p>Important concepts aur revision ke liye useful material.</p>
+</div>
 
-        <div class="stat">
-            <h3>70</h3>
-            <p>Biology Percentile</p>
-        </div>
+<div class="card">
+<div class="icon">✍️</div>
+<h3>Handwritten</h3>
+<p>Personally prepared handwritten study notes.</p>
+</div>
 
-    </div>
+<div class="card">
+<div class="icon">📱</div>
+<h3>Digital Access</h3>
+<p>Notes ko phone par easily access kar sakte ho.</p>
+</div>
 
-</section>
-
-
-<!-- SUBJECTS -->
-
-<section id="subjects">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>📚 Subjects</h2>
-            <p>Choose your subject and start revising.</p>
-        </div>
-
-
-        <div class="subject-grid">
-
-            <div class="subject">
-                <div class="subject-icon">⚗️</div>
-                <h3>Chemistry</h3>
-                <p>
-                    Concept notes, important points and quick revision.
-                </p>
-            </div>
-
-
-            <div class="subject">
-                <div class="subject-icon">⚡</div>
-                <h3>Physics</h3>
-                <p>
-                    Formula-based revision and important concepts.
-                </p>
-            </div>
-
-
-            <div class="subject">
-                <div class="subject-icon">🧬</div>
-                <h3>Biology</h3>
-                <p>
-                    Easy revision notes and important topics.
-                </p>
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
 <!-- NOTES -->
 
-<section class="notes" id="notes">
+<section id="notes" class="about">
 
-    <div class="container">
+<h2 class="section-title">Available Notes</h2>
 
-        <div class="section-title">
-            <h2>📝 Notes & Study Material</h2>
-            <p>Affordable notes for quick revision.</p>
-        </div>
+<div class="card notes-card">
 
+<h3>🧪 Chemistry Notes</h3>
 
-        <div class="notes-grid">
+<ul>
+<li>✅ Important concepts</li>
+<li>✅ Formula & reactions</li>
+<li>✅ Quick revision material</li>
+<li>✅ MHT-CET focused preparation</li>
+</ul>
 
+<div class="price">₹99</div>
 
-            <!-- CHEMISTRY -->
+<!-- APNA COSMOFEED LINK YAHAN DALO -->
+<a href="YOUR_COSMOFEED_LINK_HERE"
+   class="btn"
+   target="_blank">
+   Buy Chemistry Notes
+</a>
 
-            <div class="note-card">
+<p class="small">
+Payment ke baad notes access details milengi.
+</p>
 
-                <div class="tag">
-                    CHEMISTRY
-                </div>
-
-                <h3>
-                    Chemistry Quick Revision Notes
-                </h3>
-
-                <ul>
-                    <li>Easy language</li>
-                    <li>Important concepts</li>
-                    <li>Quick revision</li>
-                    <li>MHT-CET focused</li>
-                </ul>
-
-                <div class="price">
-                    ₹49
-                </div>
-
-                <!-- CHANGE THIS LINK -->
-                <a href="YOUR_COSMOFEED_LINK"
-                   target="_blank"
-                   class="btn primary">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-            <!-- PHYSICS -->
-
-            <div class="note-card">
-
-                <div class="tag">
-                    PHYSICS
-                </div>
-
-                <h3>
-                    Physics Formula Revision Pack
-                </h3>
-
-                <ul>
-                    <li>Important formulas</li>
-                    <li>Quick revision</li>
-                    <li>Important concepts</li>
-                    <li>Exam-focused</li>
-                </ul>
-
-                <div class="price">
-                    ₹49
-                </div>
-
-                <!-- CHANGE THIS LINK -->
-                <a href="YOUR_COSMOFEED_LINK"
-                   target="_blank"
-                   class="btn primary">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-            <!-- BIOLOGY -->
-
-            <div class="note-card">
-
-                <div class="tag">
-                    BIOLOGY
-                </div>
-
-                <h3>
-                    Biology Quick Revision Notes
-                </h3>
-
-                <ul>
-                    <li>Simple explanations</li>
-                    <li>Important topics</li>
-                    <li>Quick revision</li>
-                    <li>Student friendly</li>
-                </ul>
-
-                <div class="price">
-                    ₹49
-                </div>
-
-                <!-- CHANGE THIS LINK -->
-                <a href="YOUR_COSMOFEED_LINK"
-                   target="_blank"
-                   class="btn primary">
-                    Buy Now
-                </a>
-
-            </div>
-
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- WHY US -->
-
-<section class="why">
-
-    <div class="container">
-
-        <div class="section-title">
-            <h2>✨ Why Vaishnavi Notes?</h2>
-            <p>Made with students in mind.</p>
-        </div>
-
-
-        <div class="why-grid">
-
-            <div class="why-card">
-                <div class="icon">📖</div>
-                <h3>Easy Notes</h3>
-                <p>Simple and easy-to-revise content.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="icon">🎯</div>
-                <h3>Exam Focused</h3>
-                <p>Useful for quick exam revision.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="icon">💰</div>
-                <h3>Affordable</h3>
-                <p>Student-friendly pricing.</p>
-            </div>
-
-            <div class="why-card">
-                <div class="icon">📱</div>
-                <h3>Digital PDF</h3>
-                <p>Study anytime from your phone.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ABOUT -->
+<!-- SCORE -->
 
 <section id="about">
 
-    <div class="container">
+<h2 class="section-title">About Vaishnavi Notes</h2>
 
-        <div class="about-grid">
+<p style="text-align:center;max-width:700px;margin:0 auto 30px;">
+These notes are prepared for students who want simple,
+organized and exam-oriented study material.
+</p>
 
-            <div>
-                <div class="section-title" style="text-align:left;">
-                    <h2>💗 About Vaishnavi Notes</h2>
-                </div>
+<div class="score-box">
 
-                <p>
-                    Vaishnavi Notes is created to make MHT-CET PCB
-                    revision easier and more organized for students.
-                </p>
+<div class="score">
+<strong>84.08</strong>
+MHT-CET PCB Percentile
+</div>
 
-                <br>
+<div class="score">
+<strong>93.69</strong>
+Chemistry Percentile
+</div>
 
-                <p class="check">
-                    ✅ Chemistry notes
-                </p>
+<div class="score">
+<strong>86.54</strong>
+Physics Percentile
+</div>
 
-                <p class="check">
-                    ✅ Physics revision
-                </p>
-
-                <p class="check">
-                    ✅ Biology study material
-                </p>
-
-                <p class="check">
-                    ✅ Quick revision resources
-                </p>
-
-            </div>
-
-
-            <div class="about-box">
-
-                <h3>
-                    🎓 Study • Learn • Grow
-                </h3>
-
-                <p>
-                    Small steps every day can make your preparation
-                    stronger.
-                </p>
-
-                <p>
-                    Keep studying, keep revising and believe in yourself.
-                </p>
-
-                <br>
-
-                <strong>
-                    — Vaishnavi Notes
-                </strong>
-
-            </div>
-
-        </div>
-
-    </div>
+</div>
 
 </section>
 
 
-<!-- CTA -->
+<!-- CONTACT -->
 
-<section class="cta" id="contact">
+<section class="contact" id="contact">
 
-    <div class="container">
+<h2 class="section-title">Want Notes? 📚</h2>
 
-        <h2>
-            Ready to Start Your Revision? 📚
-        </h2>
+<p>
+For notes, questions or updates, contact me through Instagram.
+</p>
 
-        <p>
-            Explore the notes and make your preparation easier.
-        </p>
+<!-- APNA INSTAGRAM LINK YAHAN DALO -->
 
-        <div class="buttons"
-             style="justify-content:center;">
-
-            <a href="#notes"
-               class="btn white-btn">
-                View Notes
-            </a>
-
-            <a href="YOUR_INSTAGRAM_LINK"
-               target="_blank"
-               class="btn white-btn">
-                Follow Instagram
-            </a>
-
-        </div>
-
-    </div>
+<a href="YOUR_INSTAGRAM_LINK_HERE"
+   target="_blank"
+   class="btn">
+   📸 Instagram
+</a>
 
 </section>
 
-
-<!-- FOOTER -->
 
 <footer>
 
-    <div class="footer-container">
+<p>
+<strong>Vaishnavi Notes</strong>
+</p>
 
-        <div>
-            <h3>Vaishnavi Notes 📚</h3>
-            <p>
-                MHT-CET PCB Notes & Study Material
-            </p>
-        </div>
+<p class="small">
+MHT-CET PCB Study Notes • Made for Students
+</p>
 
-
-        <div class="social">
-
-            <h3>Connect With Me</h3>
-
-            <a href="YOUR_INSTAGRAM_LINK"
-               target="_blank">
-                Instagram
-            </a>
-
-            <a href="mailto:YOUR_EMAIL@gmail.com">
-                Email
-            </a>
-
-        </div>
-
-    </div>
-
-
-    <div class="copyright">
-        © 2026 Vaishnavi Notes. All Rights Reserved.
-    </div>
+<p class="small">
+© 2026 Vaishnavi Notes. All Rights Reserved.
+</p>
 
 </footer>
-
-
-<script>
-
-function toggleMenu(){
-
-    const nav = document.getElementById("nav");
-
-    nav.classList.toggle("active");
-
-}
-
-document.querySelectorAll("nav a").forEach(function(link){
-
-    link.addEventListener("click", function(){
-
-        document.getElementById("nav").classList.remove("active");
-
-    });
-
-});
-
-</script>
 
 </body>
 </html>
