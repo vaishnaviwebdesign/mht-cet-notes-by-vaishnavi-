@@ -1,1 +1,1029 @@
 # mht-cet-notes-by-vaishnavi-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Vaishnavi Notes | MHT-CET PCB Notes</title>
+
+<meta name="description"
+content="Vaishnavi Notes - MHT-CET PCB Chemistry, Physics and Biology revision notes.">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#fffaf7;
+    color:#242424;
+    line-height:1.6;
+}
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:rgba(255,250,247,0.96);
+    border-bottom:1px solid #eadfd8;
+    backdrop-filter:blur(10px);
+}
+
+.navbar{
+    max-width:1150px;
+    margin:auto;
+    padding:15px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-text{
+    font-size:25px;
+    font-weight:800;
+    color:#b45d75;
+}
+
+.logo-text span{
+    color:#c28a2d;
+}
+
+nav{
+    display:flex;
+    gap:22px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#b45d75;
+}
+
+.menu{
+    display:none;
+    font-size:27px;
+    cursor:pointer;
+}
+
+/* HERO */
+
+.hero{
+    min-height:88vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:60px 20px;
+    background:
+    radial-gradient(circle at top left,#ffe4ec,transparent 35%),
+    radial-gradient(circle at bottom right,#fff0cc,transparent 35%);
+}
+
+.hero-container{
+    max-width:1150px;
+    width:100%;
+    display:grid;
+    grid-template-columns:1.1fr .9fr;
+    gap:50px;
+    align-items:center;
+}
+
+.badge{
+    display:inline-block;
+    background:#f9e0e8;
+    color:#9e4c67;
+    padding:8px 15px;
+    border-radius:30px;
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:18px;
+}
+
+.hero h1{
+    font-size:55px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#b45d75;
+}
+
+.hero p{
+    font-size:18px;
+    color:#666;
+    max-width:580px;
+    margin-bottom:28px;
+}
+
+.buttons{
+    display:flex;
+    gap:14px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:13px 23px;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.primary{
+    background:#b45d75;
+    color:white;
+}
+
+.primary:hover{
+    background:#923f59;
+    transform:translateY(-2px);
+}
+
+.secondary{
+    border:2px solid #b45d75;
+    color:#b45d75;
+}
+
+.secondary:hover{
+    background:#b45d75;
+    color:white;
+}
+
+.hero-logo{
+    display:flex;
+    justify-content:center;
+}
+
+.hero-logo img{
+    width:360px;
+    height:360px;
+    object-fit:cover;
+    border-radius:50%;
+    box-shadow:0 20px 50px rgba(120,70,70,.18);
+}
+
+/* COMMON */
+
+section{
+    padding:80px 20px;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:8px;
+}
+
+.section-title p{
+    color:#777;
+}
+
+/* STATS */
+
+.stats{
+    background:#fff;
+}
+
+.stats-grid{
+    max-width:950px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.stat{
+    text-align:center;
+    padding:25px 15px;
+    background:#fff8f4;
+    border-radius:18px;
+    border:1px solid #f0e1da;
+}
+
+.stat h3{
+    font-size:28px;
+    color:#b45d75;
+}
+
+.stat p{
+    color:#666;
+}
+
+/* SUBJECTS */
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.subject{
+    padding:30px;
+    border-radius:22px;
+    background:white;
+    border:1px solid #eee0da;
+    text-align:center;
+    transition:.3s;
+}
+
+.subject:hover{
+    transform:translateY(-7px);
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+}
+
+.subject-icon{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 18px;
+    font-size:32px;
+    background:#f7e2e8;
+}
+
+.subject:nth-child(2) .subject-icon{
+    background:#e2eff8;
+}
+
+.subject:nth-child(3) .subject-icon{
+    background:#e4f1e1;
+}
+
+.subject h3{
+    font-size:23px;
+    margin-bottom:8px;
+}
+
+.subject p{
+    color:#777;
+}
+
+/* NOTES */
+
+.notes{
+    background:#fff;
+}
+
+.notes-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.note-card{
+    background:#fffaf7;
+    border:1px solid #eadfd8;
+    border-radius:20px;
+    padding:25px;
+    position:relative;
+    overflow:hidden;
+}
+
+.note-card .tag{
+    display:inline-block;
+    padding:5px 10px;
+    background:#f5dce5;
+    color:#984d67;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+.note-card h3{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.note-card ul{
+    padding-left:20px;
+    color:#666;
+    margin-bottom:20px;
+}
+
+.price{
+    font-size:25px;
+    font-weight:bold;
+    color:#b45d75;
+    margin-bottom:15px;
+}
+
+/* WHY */
+
+.why{
+    background:#fff4f6;
+}
+
+.why-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+}
+
+.why-card{
+    background:white;
+    padding:25px 18px;
+    border-radius:18px;
+    text-align:center;
+}
+
+.why-card .icon{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.why-card h3{
+    margin-bottom:6px;
+}
+
+/* ABOUT */
+
+.about-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about-box{
+    background:#fff5f7;
+    padding:35px;
+    border-radius:25px;
+    border:1px solid #f0dce2;
+}
+
+.about-box h3{
+    font-size:27px;
+    margin-bottom:15px;
+}
+
+.about-box p{
+    color:#666;
+    margin-bottom:12px;
+}
+
+.check{
+    margin:10px 0;
+    font-weight:600;
+}
+
+/* CTA */
+
+.cta{
+    background:linear-gradient(135deg,#b45d75,#d28ba0);
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:40px;
+    margin-bottom:12px;
+}
+
+.cta p{
+    margin-bottom:25px;
+}
+
+.white-btn{
+    background:white;
+    color:#a34d68;
+}
+
+/* FOOTER */
+
+footer{
+    background:#201c1d;
+    color:white;
+    padding:40px 20px;
+}
+
+.footer-container{
+    max-width:1100px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+footer h3{
+    margin-bottom:10px;
+}
+
+footer p{
+    color:#c8c8c8;
+}
+
+.social a{
+    color:white;
+    text-decoration:none;
+    margin-right:15px;
+}
+
+.copyright{
+    text-align:center;
+    color:#aaa;
+    margin-top:30px;
+    padding-top:20px;
+    border-top:1px solid #444;
+}
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+    nav{
+        display:none;
+        position:absolute;
+        top:65px;
+        left:0;
+        right:0;
+        background:#fffaf7;
+        flex-direction:column;
+        padding:20px;
+        border-bottom:1px solid #eee;
+    }
+
+    nav.active{
+        display:flex;
+    }
+
+    .menu{
+        display:block;
+    }
+
+    .hero-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .hero p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .buttons{
+        justify-content:center;
+    }
+
+    .hero-logo{
+        order:-1;
+    }
+
+    .hero-logo img{
+        width:250px;
+        height:250px;
+    }
+
+    .stats-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .subject-grid,
+    .notes-grid{
+        grid-template-columns:1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-grid{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+
+    .cta h2{
+        font-size:30px;
+    }
+}
+
+@media(max-width:450px){
+
+    .stats-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .why-grid{
+        grid-template-columns:1fr;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="navbar">
+
+        <div class="logo-text">
+            Vaishnavi<span>Notes</span>
+        </div>
+
+        <div class="menu" onclick="toggleMenu()">☰</div>
+
+        <nav id="nav">
+            <a href="#home">Home</a>
+            <a href="#subjects">Subjects</a>
+            <a href="#notes">Notes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+
+        <div>
+
+            <div class="badge">
+                📚 MHT-CET PCB Study Notes
+            </div>
+
+            <h1>
+                Study Smart with
+                <span>Vaishnavi Notes</span>
+            </h1>
+
+            <p>
+                Easy-to-understand MHT-CET PCB notes made for
+                quick revision, concepts and exam preparation.
+            </p>
+
+            <div class="buttons">
+                <a href="#notes" class="btn primary">
+                    📖 Explore Notes
+                </a>
+
+                <a href="YOUR_INSTAGRAM_LINK"
+                   target="_blank"
+                   class="btn secondary">
+                    📸 Instagram
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-logo">
+
+            <!-- Rename your generated logo image to logo.png -->
+            <img src="logo.png"
+                 alt="Vaishnavi Notes Logo">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- STATS -->
+
+<section class="stats">
+
+    <div class="stats-grid">
+
+        <div class="stat">
+            <h3>84.08</h3>
+            <p>MHT-CET PCB Percentile</p>
+        </div>
+
+        <div class="stat">
+            <h3>93.69</h3>
+            <p>Chemistry Percentile</p>
+        </div>
+
+        <div class="stat">
+            <h3>86.54</h3>
+            <p>Physics Percentile</p>
+        </div>
+
+        <div class="stat">
+            <h3>70</h3>
+            <p>Biology Percentile</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SUBJECTS -->
+
+<section id="subjects">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>📚 Subjects</h2>
+            <p>Choose your subject and start revising.</p>
+        </div>
+
+
+        <div class="subject-grid">
+
+            <div class="subject">
+                <div class="subject-icon">⚗️</div>
+                <h3>Chemistry</h3>
+                <p>
+                    Concept notes, important points and quick revision.
+                </p>
+            </div>
+
+
+            <div class="subject">
+                <div class="subject-icon">⚡</div>
+                <h3>Physics</h3>
+                <p>
+                    Formula-based revision and important concepts.
+                </p>
+            </div>
+
+
+            <div class="subject">
+                <div class="subject-icon">🧬</div>
+                <h3>Biology</h3>
+                <p>
+                    Easy revision notes and important topics.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- NOTES -->
+
+<section class="notes" id="notes">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>📝 Notes & Study Material</h2>
+            <p>Affordable notes for quick revision.</p>
+        </div>
+
+
+        <div class="notes-grid">
+
+
+            <!-- CHEMISTRY -->
+
+            <div class="note-card">
+
+                <div class="tag">
+                    CHEMISTRY
+                </div>
+
+                <h3>
+                    Chemistry Quick Revision Notes
+                </h3>
+
+                <ul>
+                    <li>Easy language</li>
+                    <li>Important concepts</li>
+                    <li>Quick revision</li>
+                    <li>MHT-CET focused</li>
+                </ul>
+
+                <div class="price">
+                    ₹49
+                </div>
+
+                <!-- CHANGE THIS LINK -->
+                <a href="YOUR_COSMOFEED_LINK"
+                   target="_blank"
+                   class="btn primary">
+                    Buy Now
+                </a>
+
+            </div>
+
+
+            <!-- PHYSICS -->
+
+            <div class="note-card">
+
+                <div class="tag">
+                    PHYSICS
+                </div>
+
+                <h3>
+                    Physics Formula Revision Pack
+                </h3>
+
+                <ul>
+                    <li>Important formulas</li>
+                    <li>Quick revision</li>
+                    <li>Important concepts</li>
+                    <li>Exam-focused</li>
+                </ul>
+
+                <div class="price">
+                    ₹49
+                </div>
+
+                <!-- CHANGE THIS LINK -->
+                <a href="YOUR_COSMOFEED_LINK"
+                   target="_blank"
+                   class="btn primary">
+                    Buy Now
+                </a>
+
+            </div>
+
+
+            <!-- BIOLOGY -->
+
+            <div class="note-card">
+
+                <div class="tag">
+                    BIOLOGY
+                </div>
+
+                <h3>
+                    Biology Quick Revision Notes
+                </h3>
+
+                <ul>
+                    <li>Simple explanations</li>
+                    <li>Important topics</li>
+                    <li>Quick revision</li>
+                    <li>Student friendly</li>
+                </ul>
+
+                <div class="price">
+                    ₹49
+                </div>
+
+                <!-- CHANGE THIS LINK -->
+                <a href="YOUR_COSMOFEED_LINK"
+                   target="_blank"
+                   class="btn primary">
+                    Buy Now
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY US -->
+
+<section class="why">
+
+    <div class="container">
+
+        <div class="section-title">
+            <h2>✨ Why Vaishnavi Notes?</h2>
+            <p>Made with students in mind.</p>
+        </div>
+
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <div class="icon">📖</div>
+                <h3>Easy Notes</h3>
+                <p>Simple and easy-to-revise content.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">🎯</div>
+                <h3>Exam Focused</h3>
+                <p>Useful for quick exam revision.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">💰</div>
+                <h3>Affordable</h3>
+                <p>Student-friendly pricing.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="icon">📱</div>
+                <h3>Digital PDF</h3>
+                <p>Study anytime from your phone.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="container">
+
+        <div class="about-grid">
+
+            <div>
+                <div class="section-title" style="text-align:left;">
+                    <h2>💗 About Vaishnavi Notes</h2>
+                </div>
+
+                <p>
+                    Vaishnavi Notes is created to make MHT-CET PCB
+                    revision easier and more organized for students.
+                </p>
+
+                <br>
+
+                <p class="check">
+                    ✅ Chemistry notes
+                </p>
+
+                <p class="check">
+                    ✅ Physics revision
+                </p>
+
+                <p class="check">
+                    ✅ Biology study material
+                </p>
+
+                <p class="check">
+                    ✅ Quick revision resources
+                </p>
+
+            </div>
+
+
+            <div class="about-box">
+
+                <h3>
+                    🎓 Study • Learn • Grow
+                </h3>
+
+                <p>
+                    Small steps every day can make your preparation
+                    stronger.
+                </p>
+
+                <p>
+                    Keep studying, keep revising and believe in yourself.
+                </p>
+
+                <br>
+
+                <strong>
+                    — Vaishnavi Notes
+                </strong>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CTA -->
+
+<section class="cta" id="contact">
+
+    <div class="container">
+
+        <h2>
+            Ready to Start Your Revision? 📚
+        </h2>
+
+        <p>
+            Explore the notes and make your preparation easier.
+        </p>
+
+        <div class="buttons"
+             style="justify-content:center;">
+
+            <a href="#notes"
+               class="btn white-btn">
+                View Notes
+            </a>
+
+            <a href="YOUR_INSTAGRAM_LINK"
+               target="_blank"
+               class="btn white-btn">
+                Follow Instagram
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div>
+            <h3>Vaishnavi Notes 📚</h3>
+            <p>
+                MHT-CET PCB Notes & Study Material
+            </p>
+        </div>
+
+
+        <div class="social">
+
+            <h3>Connect With Me</h3>
+
+            <a href="YOUR_INSTAGRAM_LINK"
+               target="_blank">
+                Instagram
+            </a>
+
+            <a href="mailto:YOUR_EMAIL@gmail.com">
+                Email
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Vaishnavi Notes. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<script>
+
+function toggleMenu(){
+
+    const nav = document.getElementById("nav");
+
+    nav.classList.toggle("active");
+
+}
+
+document.querySelectorAll("nav a").forEach(function(link){
+
+    link.addEventListener("click", function(){
+
+        document.getElementById("nav").classList.remove("active");
+
+    });
+
+});
+
+</script>
+
+</body>
+</html>
